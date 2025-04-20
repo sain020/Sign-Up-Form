@@ -15,12 +15,17 @@ input{
 
 button[type="submit"]{
     background-color: rgba(0, 0, 0, 0.75);
-    color: white;
+    color: #e3e3e3;
     font-weight: bold;
     
     height: 3em;
     width: 13em;
     border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3em
 }
 
 body{
@@ -103,7 +108,7 @@ form .bottom{
     display: flex;
     flex-direction: column;
     align-items: top;
-    gap: 2em;
+    gap: 1em;
 }
 
 form .bottom > div{
