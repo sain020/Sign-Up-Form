@@ -11,18 +11,39 @@
         <h1>SAIN</h1>
     </div>
     <form>
-        <label for="first-name">FIRST NAME</label>
-        <input type="text" id="first-name" required>
-        <label for="last-name">LAST NAME</label>
-        <input type="text" id="last-name" required>
-        <label for="email">EMAIL</label>
-        <input type="email" required>
-        <label for="phone">PHONE NUMBER</label>
-        <input type="tel" id="phone">
-        <label for="password">PASSWORD</label>
-        <input type="text" id="password" required>
-        <label for="confirm-password">CONFIRM PASSWORD</label>
-        <input type="text" id="confirm-password" required>
+        <div class="top">
+            <div class="left">
+                <div>
+                    <label for="first-name">FIRST NAME</label>
+                    <input type="text" id="first-name" required placeholder="John">        
+                </div>
+                <div>
+                    <label for="email">EMAIL</label>
+                    <input type="email" required placeholder="JohnDoe@email.com">
+                </div>
+                <div>
+                    <label for="password">PASSWORD</label>
+                    <input type="text" id="password" required>    
+                </div>
+            </div>
+            <div class="right">
+                <div>
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text" id="last-name" required placeholder="Doe">
+                </div>
+                <div>
+                    <label for="phone">PHONE</label>
+                    <input type="tel" id="phone" placeholder="123456789" maxlength="10">
+                </div>
+                <div>
+                    <label for="confirm-password">CONFIRM PASSWORD</label>
+                    <input type="text" id="confirm-password" required>    
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <button type="submit">Create Account</button>
+        </div>
     </form>
 </body>
 </html>
