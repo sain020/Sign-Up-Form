@@ -1,6 +1,42 @@
+:root{
+    --highlight: rgba(0, 0, 0, 0.75);;
+}
+
+@font-face{
+    font-family: "robot";
+    src: url(assets/fonts/roboto-variablefont_wdthwght-webfont.woff);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "bebasneue";
+    src: url(assets/fonts/bebasneue-regular-webfont.woff);
+    font-weight: normal;
+    font-style: normal;
+}
+
 *{
     margin: 0;
     box-sizing: border-box;
+    font-family: "robot";
+}
+
+h1{
+    font-family: "bebasneue";
+}
+
+a{
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:link{
+    color: var(--highlight)
+}
+
+a:visited{
+    color: var(--highlight)
 }
 
 input{
@@ -14,7 +50,7 @@ input{
 }
 
 button[type="submit"]{
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: var(--highlight);
     color: #e3e3e3;
     font-weight: bold;
     
