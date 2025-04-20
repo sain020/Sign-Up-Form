@@ -50,6 +50,10 @@ input:focus{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.479);
 }
 
+input:focus:invalid{
+    border-color: red;
+}
+
 input{
     height: 2.5em;
     border-radius: 5px;
