@@ -9,7 +9,8 @@ input{
     height: 2.5em;
     border-radius: 5px;
 
-    width: 250px;
+    width: 100%;
+    max-width: 250px;
 }
 
 body{
@@ -57,11 +58,15 @@ form div.top > div{
 
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     justify-content: center;
 
     height: 100%;
     width: 50%;
+}
+
+form div.top div.left{
+    max-width: 300px;
 }
 
 form div.top > div > div{
@@ -74,6 +79,8 @@ form div.top > div > div{
     font-size: 0.75em;
     color: rgb(106, 106, 106);
     font-weight: bold;
+
+    width: 90%;
 }
 
 form .bottom{
