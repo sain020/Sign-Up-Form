@@ -3,16 +3,24 @@
     box-sizing: border-box;
 }
 
+input{
+    padding: 0.25em;
+
+    height: 2.5em;
+    border-radius: 5px;
+
+    width: 250px;
+}
+
 body{
     display: flex;
     height: 100vh;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+    padding: 0 10vh;
     background-color: black;
 }
 
 body div{
-    height: 80vh;
+    height: 100vh;
 }
 
 #main-pic{
@@ -34,8 +42,9 @@ form{
     flex-direction: column;
     padding: 2.5vw;
 }
-form > div{
-    height: 50%;
+
+form .top{
+    height: 60%;
     width: 100%;
 
     display: flex;
@@ -43,20 +52,41 @@ form > div{
     justify-content: left;
 }
 
-form > div > *{
+form div.top > div{
     display: block;
 
     display: flex;
     flex-direction: column;
-    align-items: left;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
 
-    width: 100%;
-}
-
-form div div{
     height: 100%;
     width: 50%;
+}
+
+form div.top > div > div{
+    height: 5em;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+
+    font-size: 0.75em;
+    color: rgb(106, 106, 106);
+    font-weight: bold;
+}
+
+form .bottom{
+    height: 40%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+form .bottom > div{
+    height: 2em;
+    width: 100%;
 }
 
 #main-pic h1{
