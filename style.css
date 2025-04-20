@@ -31,6 +31,10 @@ a{
     font-weight: bolder;
 }
 
+input[type="text"], input[type="email"], input[type="password"], input[type="tel"]{
+    padding: 0.75em;
+}
+
 a:link{
     color: var(--highlight)
 }
