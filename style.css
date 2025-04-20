@@ -1,5 +1,5 @@
 :root{
-    --highlight: rgba(0, 0, 0, 0.75);;
+    --highlight: rgba(0, 0, 0);;
 }
 
 @font-face{
@@ -31,10 +31,6 @@ a{
     font-weight: bolder;
 }
 
-input[type="text"], input[type="email"], input[type="password"], input[type="tel"]{
-    padding: 0.75em;
-}
-
 a:link{
     color: var(--highlight)
 }
@@ -43,9 +39,18 @@ a:visited{
     color: var(--highlight)
 }
 
-input{
-    padding: 0.25em;
+input[type="text"], input[type="email"], input[type="password"], input[type="tel"]{
+    padding: 0.75em;
+    outline: none;
+    border: 2px solid black;
+}
 
+input:focus{
+    border-color: blue ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.479);
+}
+
+input{
     height: 2.5em;
     border-radius: 5px;
 
@@ -65,7 +70,9 @@ button[type="submit"]{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.3em
+    gap: 0.3em;
+
+    box-shadow: 3px 1px 10px rgba(0, 0, 0, 0.479);
 }
 
 body{
